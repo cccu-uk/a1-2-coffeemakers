@@ -6,5 +6,13 @@ namespace QuizzApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var myForm = new SinglePlayerForm();
+            myForm.FormClosed += (s, args) => this.Close();
+            myForm.Show();
+        }
     }
 }
