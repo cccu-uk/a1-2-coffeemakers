@@ -8,9 +8,9 @@ namespace QuizzApp.data
 {
     internal class Question
     {
-        string question { get; }
-        string rightAnswer { get; }
-        string[] wrongAnswers { get; }
+       public string question { get; }
+        public string rightAnswer { get; }
+       public string[] wrongAnswers { get; }
 
 
         /// <summary>

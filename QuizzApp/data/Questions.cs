@@ -14,7 +14,7 @@ namespace QuizzApp.data
 {
     internal class Questions
     {
-        Dictionary<Topics, Question[]> questionDict = new Dictionary<Topics, Question[]>();
+        Dictionary<Topics, Question[]> questionDict { get; } = new Dictionary<Topics, Question[]>();
 
 
         /// <summary>
@@ -32,8 +32,6 @@ namespace QuizzApp.data
 
             return questionDict[topic].Length;
         }
-
-
 
 
         /// <summary>
