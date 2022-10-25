@@ -98,6 +98,8 @@ namespace QuizzApp
             }
         }
 
+
+
         private void checkAnswerEvent(object sender, EventArgs e)
         {
             var senderObject = (Button)sender;
@@ -115,11 +117,16 @@ namespace QuizzApp
                 MessageBox.Show("Quiz Ended" + Environment.NewLine + "You have scored " + score.ToString() + Environment.NewLine + " Click Okay to play again");
                 score = 0;
                 questionNumber = 0;
-                askQuestion(questionNumber);
+                this.Hide();
+                var myForm = new topicsForm();
+                myForm.FormClosed += (s, args) => this.Close();
+                myForm.Show();
             }
 
             questionNumber++;
             askQuestion(questionNumber);
+
         }
+
     }
 }
