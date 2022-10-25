@@ -61,7 +61,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(181, 112);
             this.button3.TabIndex = 2;
+            this.button3.Text = "Kids Mode";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -91,7 +93,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "topicsForm";
-            this.Text = "Form2";
+            this.Text = "Choose Your Topic";
             this.ResumeLayout(false);
             this.PerformLayout();
 

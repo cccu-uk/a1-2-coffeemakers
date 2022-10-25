@@ -32,5 +32,13 @@ namespace QuizzApp
             newGame.FormClosed += (s, args) => this.Close();
             newGame.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var newGame = new KidsForm();
+            newGame.FormClosed += (s, args) => this.Close();
+            newGame.Show();
+        }
     }
 }
